@@ -1,17 +1,18 @@
-import React, { useContext } from "react";
+import React, { useContext, useReducer } from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { ScrollView, TextInput } from "react-native-gesture-handler";
 import MaterialCommunityIcon from "react-native-vector-icons/MaterialCommunityIcons";
 
 import LoginActionCreator from "../redux/signin/LoginActions";
 import LoginReducer from "../redux/signin/LoginReducer";
-import { SET_EMAIL, SET_PASSWORD, RESET_FORM } from "./LoginTypes";
+import { SET_EMAIL, SET_PASSWORD } from "../redux/signin/LoginTypes";
 
-import { AuthContext } from "./src/context/AuthContext";
+import AuthContext from "../context/AuthContext";
 
 import { colors } from "../style/colors";
 import { fonts } from "../style/fonts";
 import globalStyles from "../style/styles";
+
 const logo = require("../assets/images/logo/rua-group.png");
 const msg = {
   title: "Bienvenido",
@@ -30,8 +31,8 @@ const Login = () => {
       password: "",
     },
   });
-  const { setAuth } = useContext(AuthContext);
 
+  const auth = useContext(AuthContext);
   const onClose = () => {};
   const switchPassword = () => {};
 
