@@ -1,0 +1,15 @@
+export const fonts = {
+  calibri_bold: 'Calibri Bold',
+  sourceSandsPro_Black: 'SourceSansPro-Black',
+  sourceSansPro_BlackItalic: 'SourceSansPro-BlackItalic',
+  sourceSansPro_Bold: 'SourceSansPro-Bold',
+  sourceSansPro_BoldItalic: 'SourceSansPro-BoldItalic',
+  sourceSansPro_ExtraLight: 'SourceSansPro-ExtraLight',
+  sourceSansPro_ExtraLightItalic: 'SourceSansPro-ExtraLightItalic',
+  sourceSansPro_Italic: 'SourceSansPro-Italic',
+  sourceSansPro_Light: 'SourceSansPro-Light',
+  sourceSansPro_LightItalic: 'SourceSansPro-LightItalic',
+  sourceSansPro_Regular: 'SourceSansPro-Regular',
+  sourceSansPro_SemiBold: 'SourceSansPro-SemiBold',
+  sourceSansPro_SemiBoldItalic: 'SourceSansPro-SemiBoldItalic',
+};
